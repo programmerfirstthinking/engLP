@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background: linear-gradient(135deg, #fff5f5 0%, #f1c0c0 100%);
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #7f1d1d;
+    /* 深い赤 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+    border-bottom: 4px solid #b91c1c;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #9f1239;
+    /* 覚悟感のある赤 */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 5px solid #b91c1c;
+}
+
+div {
+    background: #ffffff;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(185, 28, 28, 0.15);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 1.05em;
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    line-height: 1.9;
+}
+
+p:first-of-type {
+    margin-top: 0;
+}
+
+/* ホバーエフェクト */
+div:hover {
+    box-shadow: 0 10px 18px rgba(185, 28, 28, 0.25);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* 強調表示 */
+strong {
+    color: #c92a2a;
+    font-weight: 600;
+}
+
+.important {
+    font-size: 3em;
+    background-color: #ffe5e5;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* ====== 「まずはご相談ください」決断セクション ====== */
+
+/* 該当h2（後半に出てくる最後のh2）を強調 */
+h2.cta-title {
+    background: linear-gradient(135deg, #b30000, #ff3b3b);
+    color: #fff;
+    padding: 28px 20px;
+    margin: 80px 0 40px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(179, 0, 0, 0.35);
+}
+
+/* 決断セクション全体の文章をまとめて強調 */
+h2:last-of-type~p {
+    max-width: 760px;
+    margin: 24px auto;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    /* text-align: center; */
+}
+
+/* 強調されている文章（太字）をさらに目立たせる */
+h2:last-of-type~p strong {
+    color: #b30000;
+    font-size: 1.1em;
+}
+
+/* LINE登録CTAリンク */
+h2:last-of-type~p a {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 18px 36px;
+    background: linear-gradient(135deg, #ff0000, #b30000);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 12px 28px rgba(179, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ホバー演出（決断を後押し） */
+h2:last-of-type~p a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 36px rgba(179, 0, 0, 0.5);
+}
+
+/* 向いていない人リストを“警告枠”っぽく */
+h2:last-of-type~ul {
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 24px 32px;
+    background: #fff5f5;
+    border-left: 6px solid #b30000;
+    border-radius: 8px;
+}
+
+h2:last-of-type~ul li {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #b30000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* タブレット用 */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+    }
+
+    div {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.7;
+    }
+}
+
+/* スマートフォン用 */
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+        background: linear-gradient(135deg, #fff5f5 0%, #f1c0c0 100%);
+    }
+
+    h1 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        margin-top: 15px;
+        margin-bottom: 12px;
+        padding-left: 8px;
+        border-left: 4px solid #b91c1c;
+    }
+
+    div {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    p {
+        font-size: 0.95em;
+        line-height: 1.6;
+        margin-bottom: 12px;
+        text-align: left;
+    }
+}
