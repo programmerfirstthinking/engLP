@@ -149,6 +149,15 @@ img {
     margin: 20px auto;
 }
 
+h3 {
+    font-size: 1.4em;
+    color: #b91c1c;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    border-left: 5px solid #b91c1c;
+}
+
 /* タブレット用 */
 @media (max-width: 768px) {
     body {
